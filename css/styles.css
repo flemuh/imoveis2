@@ -1,0 +1,828 @@
+
+html {
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+p {
+  width: 11px;
+  height: 11px;
+}
+
+li{
+list-style: none;
+}
+
+a:focus, a:hover, a {
+text-decoration: none;
+cursor: pointer;
+}
+
+#warper {
+  width: 996px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  height: 525px;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+/* logo */
+
+
+.info {
+  font-size:1.2vw "Trebuchet MS", Arial, Helvetica, sans-serif; color:#930;
+}
+
+.info strong {
+  color:#333;
+}
+
+/* fonts */
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Cloud-Light.otf);
+}
+
+
+@font-face {
+  font-family: "Avenir LT W02 85 Heavy";
+  src: url("../fonts/748da442-9dd9-4a4d-8da0-b114e16e5d7f.woff");
+  src: url("../fonts/748da442-9dd9-4a4d-8da0-b114e16e5d7f.woff") format("woff"),url("../fonts/748da442-9dd9-4a4d-8da0-b114e16e5d7f.woff") format("svg");}
+
+
+
+tr>td>label>span {
+  font-size: 1.1vw;
+}
+tr>td>span {
+  font-size: 1.1vw;
+}
+
+tr>td>input {
+  font-size: 1.1vw;
+}
+
+/* cadastro imveos */
+textarea:focus, input:focus, select:focus {
+  box-shadow: 1 1 1 1;
+  border: 1px solid #c1c1c1;
+  outline: 0;
+}
+
+textarea, input, select {
+  box-shadow: 1 0 0 0;
+  border: 0 none;
+  outline: 0;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.navbar {
+ -webkit-box-shadow: none;  
+box-shadow: none;
+}
+
+.navbar-inverse {
+background: none;
+border:none
+}
+
+.navbar ul li a {
+  font-family: myFirstFont;
+  display: block;
+  line-height: 15px;
+  color: #8b8b8b;
+  font-size: 14px;
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  display: block;
+  font-size: 1em;
+  padding: 5%;
+
+}
+
+.navbar ul li{
+  display: block;
+  border-bottom: 1px solid #34495D;
+  padding: 5%;
+  border-bottom: 1px solid #ebebeb !important;
+  line-height: 14px;
+}
+
+.navbar ul {
+  padding: 0px;
+  text-align: center;
+  font-family: 'Avenir LT W02 85 Heavy',Arial !important;
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar ul li a {
+  text-align: center;
+  font-family: 'Avenir LT W02 85 Heavy',Arial !important;
+}
+
+.navbar ul>li {
+  border-bottom: 1px solid #ebebeb !important;
+  line-height: 14px;
+  display: block;
+  padding: 10px 0;
+  line-height: 15px;
+  color: #8b8b8b !important;
+  font-size: 14px;
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+#tabela th, td {
+  padding: 15px;
+}
+
+#tabela tr:hover {
+
+  color: #fff;
+}
+
+.error {
+  color:red;
+  display: block;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* busca de imoveis */
+
+#botaopesquisa-imoveis {
+  margin-top: 2.8%;
+ width: 15%;
+  height: 25px;
+  color:black!important;
+  background-color:white !important;
+  border: solid 2px #ff6609 !important;
+}
+
+#botaopesquisa-imoveis:hover {
+  color:white !important;
+  background-color:#ff6609 !important;
+  background-image:none !important;
+}
+
+#botaobusca{
+  color:#ff6609 !important;
+  border-color: #ff6609  !important;
+}
+
+#botaobusca:hover{
+  color:white!important;
+  border:none!important;
+  background-color: #ff6609 !important;
+}
+
+#buscaimovel_top{
+  margin-top:15%;
+  height: 80px !important;
+  background-color: #a79161;
+  -webkit-box-shadow: 1px 3px 14px 1px rgba(109,113,130,0.50) !important;
+  -moz-box-shadow: 1px 3px 14px 1px rgba(109,113,130,0.50) !important;
+  box-shadow: 1px 3px 14px 1px rgba(109,113,130,0.50) !important;
+}
+
+/* imovel */
+.fone {
+  margin-left:80%;
+  margin-top:15%;
+}
+
+label {
+  color: black;
+  font-size: 0.9vw;
+}
+
+small {
+
+  font-size: 0.9vw;
+}
+
+.reimoveis label span {
+  margin-left:1%;
+  margin-top:0.40%;
+  color:white;
+}
+
+.reimoveis label .btn {
+height:5%;
+width: 100%;
+
+}
+
+/*fundo busca top */
+.reimoveisbg{
+  position:fixed;
+  background-color:#383939;
+  width :54.85%;
+  height:3%;
+}
+
+#imoveis_resultado {
+  margin-top:5%;
+  margin-left: 5% !important;
+}
+
+.margin-bottomn {
+  border-bottom: 5px !important;
+}
+
+/*
+cosulta menu
+ */
+
+#txt_consulta {
+  width: 80%;
+}
+
+.form-control {
+  border-radius: 4px !important;
+}
+
+/* form contato */
+.contact-form{
+  margin-left:20%;
+  margin-top:5%;
+}
+
+/* form contato h1 */
+.contact-form h1 {
+  margin-left:20%;
+}
+
+/* form contato botao */
+.form-group button {
+  width:10%;
+  height:5%;
+  margin-top:0px;
+  padding:0px;
+}
+
+.titulos h1 {
+  margin-left:20%;
+}
+.titulos h2 {
+  margin-left:15%;
+}
+
+/*busca select*/
+.busca select{ 
+  width: 75%;
+}
+
+/* home */
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+/*classe img1-1 opacity*/
+.img1 {
+  opacity: 1;
+  width:100%;
+  height:100%;
+}
+
+#home-img div {
+position: relative;
+}
+
+#home_imagens {
+  margin-top: 18%;margin-left: 2%;
+}
+
+/* Make the image to responsive */
+#home-img div a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+
+
+
+/* The overlay effect - lays on top of the container and over the image */
+#home-img div .overlay {
+  font-family: 'Avenir LT W02 95 Black',Arial;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size:22px;
+
+}
+
+/* When you mouse over the container, fade in the overlay title */
+#home-img div .overlay {
+  opacity: 1;
+  width: 100%;
+}
+
+.img-responsive{
+  width: 100%; height: auto; display:block;
+}
+
+/* detalhes imovel */
+#imovel_conteudo{
+  display: block;
+  width: 100%;
+  margin-left: 10%;
+}
+
+#parte1imvoell {
+  margin-right: 0.2%;
+  margin-bottom: 0.2%;
+  text-align: center;
+  height: 20%;
+  position: relative;
+  width: 28%;
+  background: -moz-linear-gradient(top,#333,#595959);
+  background:#666;
+}
+#parte1imvoel2 {
+  text-align: center;
+  margin-bottom: 0.2%;
+  position: relative;
+  width: 50%;
+  padding:0px !important;
+  height: 20%;
+}
+
+#parte1imvoel2 img{
+  height: 100%;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding:0px !important;
+}
+
+#parte1imvoel3 {
+  margin-bottom: 0.2%;
+  margin-left: 0.2%;
+  text-align: center;
+  height: 20%;
+  position: relative;
+  width: 28%;
+  background: -moz-linear-gradient(top,#333,#595959);
+  background:#666;
+}
+
+.des {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 10px;
+  color: #fff;
+  padding-bottom: 10px;
+  font-family: 'Avenir LT W02 45 Book',Arial;
+}
+.categoria {
+  color: #ff5311;
+  font-family: 'Avenir LT W02 45 Book',Arial;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.valor  {
+font-size: 18px;
+padding-bottom: 10px;
+font-family: 'Avenir LT W02 45 Book',Arial;
+font-size: 14px;
+color: #d1d1d1;
+}
+
+.titulo{
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 10px;
+  font-family: 'Avenir LT W02 45 Book',Arial;
+}
+
+.comodos  {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 10px;
+  font-family: 'Avenir LT W02 45 Book',Arial;
+}
+
+.registro {
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-family: 'Avenir LT W02 45 Book',Arial;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.novidade {
+  margin: 0 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Avenir LT W02 85 Heavy',Arial;
+  text-transform: uppercase;
+  height: 22px;
+  line-height: 22px;
+
+}
+
+.novidade2  {
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: 'Avenir LT W02 65 Medium',Arial;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  line-height: normal;
+  color: #40b3b4;
+  word-break: break-all;
+
+}
+
+#detalhadoparte1  {
+  background: url(../img/bg_imovel_header_texture.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 20%;
+}
+
+#detalhadoparte2  {
+  height: 20%;
+  background-color: #d0e1d8; height: 20%; border-left: 5px solid white;border-right: 5px solid white;
+  padding-right: -5px;"
+}
+
+#detalhadoparte3  {
+  height: 20%;
+}
+
+#detalhadoparte4  {
+  height: 20%;
+}
+
+#detalhadoparte5  {
+  height: 20%;
+}
+
+.close {
+  z-index: 1;
+  width: 33px;
+  height: 31px;
+  background: url(../img/bt_fechar.png) top left no-repeat;
+  position: absolute;
+  top: 13px;
+  right: -10px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#tabela th, td {
+  padding: 5px;
+}
+
+/* login */
+#loginbox {
+  margin-top: 30px;
+  margin-left: 25%;
+}
+
+.iconmelon {
+  display: block;
+  margin: auto;
+}
+
+.panel {
+  background-color: transparent;
+}
+
+.panel-default {
+  margin-top: 60%;
+  margin-left: 40%;
+  width: 80%;
+  height: 200px;
+}
+
+#login_button {
+  margin-top: 5%;
+  position: absolute;
+  right:0%;
+  width: 100px;
+}
+
+/* background da tela de login */
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+  /* float: left; */
+  padding: 0;
+  margin: 0;
+}
+#mobile_home {
+width: 48%!important;
+  margin: 0 2px 4px 4px !important;
+}
+
+/* modal */
+.modal-dialog {
+  max-width: 94%;
+  width: 94%;
+
+  height: 80%;
+  margin: 8rem 4rem 4rem 4rem;
+}
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 0px solid #e5e5e5;
+}
+.modal-content  {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+.modal-backdrop
+{
+  opacity:0.1 !important;
+}
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 100px) and (max-width: 770px) {
+
+  .menu__mobile-button .fa{
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    margin-bottom: 100px;
+  }
+
+  .mobile-menu__close {
+    font-size: 33px;
+    position: absolute;
+    top: 52px  !important;
+    left: 27px !important;
+  }
+
+  #home_imagens {
+
+    margin-top: 30%;
+    margin-left: 2%;
+  }
+
+  .heading {
+    top: 0px;
+    left: 33% !important;;
+    position: absolute;
+    width: 25%!important;
+  }
+
+  #mobile_home {
+    width: 95%!important;
+    margin: 4px 2px 4px 4px !important;
+  }
+
+  /* nav */
+  .navbar {
+    display: none;
+  }
+
+  #buscaimovel_top {
+    margin-top: 150px !important;
+    height: 50px  !important;
+  }
+}
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 770px) and (max-width: 992px) {
+
+  /* nav */
+  nav {
+    margin:0% !important;
+    top:0% !important;
+    height:55vh;
+    z-index: 100;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+
+  tr>td>label>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>input {
+    font-size: 0.9vw;
+  }
+
+}
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1090.98px) {
+
+
+  .logo-mobile {
+    display: none;
+  }
+  /* nav */
+  nav {
+    margin:0% !important;
+    top:0% !important;
+    height:70vh;
+    z-index: 100;
+  }
+
+
+  tr>td>label>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>input {
+    font-size: 0.9vw;
+  }
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 1090px) and (max-width: 1199.99px) {
+
+
+  .logo-mobile {
+    display: none;
+  }
+
+  /* nav */
+  nav {
+    margin:0% !important;
+    top:0% !important;
+    height:70vh;
+    z-index: 100;
+  }
+
+
+  tr>td>label>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>input {
+    font-size: 0.9vw;
+  }
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) and (max-width: 1800.98px) {
+
+
+  .logo-mobile {
+    display: none;
+  }
+
+  /* nav */
+  nav {
+    margin:0% !important;
+    top:0% !important;
+    height:80vh;
+    z-index: 100;
+  }
+
+
+  tr>td>label>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>input {
+    font-size: 0.9vw;
+  }
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 1800px) and (max-width: 5000.98px) {
+
+
+  .logo-mobile {
+    display: none;
+  }
+
+  /* nav */
+  nav {
+    margin:0% !important;
+    top:0% !important;
+    height:80vh;
+    z-index: 100;
+  }
+
+
+  tr>td>label>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>span {
+    font-size: 0.9vw;
+  }
+
+  tr>td>input {
+    font-size: 0.9vw;
+  }
+
+}
+
+/*meu monitor*/
+/*  @media (min-width: 1200px) and (max-width: 4000.98px) {
+}
+
+*/
